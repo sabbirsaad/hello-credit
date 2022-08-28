@@ -1,0 +1,84 @@
+#about-us {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+.about-container {
+    background-color: $white-100;
+    border-radius: 12px;
+    padding: 1rem;
+    @include md {
+        padding: 1.8rem;
+    }
+    @include lg {
+        padding: 2.5rem;
+    }
+    h2 {
+        text-align: left;
+        @include md {
+            text-align: center;
+        }
+    }
+}
+.about-wrapper {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    @include md {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 3rem;
+        gap: 2rem;
+    }
+}
+.about-box {
+    h4 {
+        color: $black-200;
+        font-size: 1.125rem;
+        font-family: "THICCCBOI";
+        font-weight: 600;
+        @include md {
+            font-size: 1.5rem;
+        }
+    }
+    p {
+        color: $gray-400;
+        font-size: 0.75rem;
+        font-family: "THICCCBOI";
+        font-weight: 400;
+        @include md {
+            font-size: 1rem;
+        }
+    }
+}
+.about-box-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7fafd;
+    border-radius: 12px;
+    padding: 3rem 0;
+    .about-image {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+    @include lg {
+        grid-row: 1/3;
+    }
+}
+.about-box-2 {
+    @include lg {
+        grid-row: 1/2;
+    }
+}
+.about-box-3 {
+    @include lg {
+        grid-row: 3/4;
+    }
+}
+.about-box-4 {
+    @include lg {
+        grid-row: 2/4;
+    }
+}

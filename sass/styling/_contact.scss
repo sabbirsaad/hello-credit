@@ -1,0 +1,41 @@
+#contact {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.contact-content {
+    background-color: $white-100;
+    padding: 1rem;
+    border-radius: 12px;
+    @include md {
+        padding: 1.8rem;
+    }
+    @include lg {
+        padding: 2.5rem;
+    }
+}
+.contact-wrapper {
+    input,
+    textarea {
+        width: 100%;
+        background-color: $white-200;
+        border: 1px solid $gray-200;
+        padding: 0.8rem 0.8rem;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: all 200ms ease;
+        &::placeholder {
+            color: $gray-500;
+            font-size: 0.9rem;
+        }
+        &:focus {
+            border-color: #86b7fe;
+            box-shadow: 0 0 0 0.25rem #0d6efd40;
+        }
+    }
+    a {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}

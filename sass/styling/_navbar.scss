@@ -1,0 +1,127 @@
+.navbar-container {
+    padding: 10px 0px !important;
+    background-color: $white-100;
+    box-shadow: 0px 4px 8px 0px #0000000a;
+    .navbar-brand {
+        margin: auto;
+        @include lg {
+            margin: 0;
+        }
+    }
+}
+.navbar-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    @include lg {
+        width: auto;
+    }
+}
+
+.navbar-toggler {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    padding: 0 0 !important;
+    border: none !important;
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.navbar-items-1 {
+    align-items: flex-start;
+    padding-left: 2rem !important;
+    margin-top: 2rem !important;
+    gap: 5px;
+    li {
+        display: inline-block;
+    }
+    @include lg {
+        padding-left: 0 !important;
+        margin-top: 0 !important;
+        gap: 20px;
+    }
+}
+.navbar-items-1 li a,
+.navbar-items-3 li a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #65676b;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0px;
+        left: 0;
+        background-color: $primary-100;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+.navbar-items-1 li a.active-nav,
+.navbar-items-3 li a.active-nav {
+    color: $primary-100 !important;
+    &::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+
+.navbar-items-2 {
+    display: none;
+    margin: 0;
+    padding-left: 0;
+    gap: 10px;
+    button {
+        padding: 0.7em 2.5em;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-family: "THICCCBOI";
+        background-color: $white-100;
+        color: $gray-300;
+        transition: all 400ms ease;
+        &:hover {
+            color: $white-200;
+            background-color: $primary-100;
+        }
+    }
+    li a button.active-btn {
+        background-color: $primary-100;
+        color: $white-200;
+    }
+    @include lg {
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+    }
+}
+
+.navbar-items-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2rem !important;
+    gap: 5px;
+    li {
+        display: inline-block;
+    }
+    @include lg {
+        display: none !important;
+    }
+}
+
+.offcanvas-content {
+    width: 250px !important;
+}

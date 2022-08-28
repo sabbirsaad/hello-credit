@@ -1,0 +1,29 @@
+@import "./sass/partials/config";
+@import "./sass/partials/colors";
+@import "./sass/partials/mixins";
+@import "./sass/partials/general";
+@import "./sass/styling/about";
+@import "./sass/styling/signIn";
+@import "./sass/styling/signUp";
+@import "./sass/styling/tellMore";
+@import "./sass/styling/contact";
+@import "./sass/styling/index/header";
+@import "./sass/styling/index/offer";
+@import "./sass/styling/index/progress";
+@import "./sass/styling/index/ourPolicy";
+@import "./sass/styling/index/footer";
+@import "./sass/styling/footerLg";
+@import "./sass/styling/navbar";
+@import "./sass/styling/community";
+@import "./sass/styling/bottomnav";
+@import "./sass/styling/common";
+@import "./sass/styling/footerLg";
+
+body {
+    background-color: #f4f6fa !important;
+    font-family: "THICCCBOI" !important;
+}
+
+main {
+    min-height: calc(100vh - 10rem);
+}

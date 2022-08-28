@@ -1,0 +1,68 @@
+#progress {
+    padding: 2rem 0;
+    @include lg {
+        padding: 4rem 0;
+    }
+}
+.progress-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    @include md {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.progress-box {
+    span {
+        max-width: 20ch;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $black-200;
+        text-align: center;
+        @include md {
+            text-align: left;
+            font-size: 2.5rem;
+        }
+        @include lg {
+            font-size: 3rem;
+        }
+    }
+}
+.right-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    @include lg {
+        gap: 2rem;
+    }
+}
+.right-inner-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 8px 15px 32px rgba(1, 85, 168, 0.04);
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    transition: all 200ms ease;
+    &:hover {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    h6 {
+        margin-bottom: 0.5rem !important;
+        margin-top: 0 !important;
+    }
+    p {
+        max-width: 30ch;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: $gray-300;
+        margin-bottom: 0;
+        @include md {
+            font-size: 0.875rem;
+        }
+    }
+    .bottom-image {
+        width: 3.5rem;
+    }
+}

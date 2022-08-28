@@ -1,0 +1,64 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+    font-family: "THICCCBOI" !important;
+}
+
+h2 {
+    font-weight: 700 !important;
+    font-size: 1.75rem !important;
+    color: $primary-100 !important;
+    @include lg {
+        font-size: 2.5rem !important;
+    }
+}
+
+h3 {
+    color: $primary-100 !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    @include lg {
+        font-size: 2rem !important;
+    }
+}
+
+h4 {
+    color: $black-200 !important;
+    font-size: 1.125rem !important;
+    font-family: "THICCCBOI" !important;
+    font-weight: 600 !important;
+    @include lg {
+        font-size: 1.5rem !important;
+    }
+}
+
+h6 {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    color: $gray-600 !important;
+    margin: 1rem 0 !important;
+    @include lg {
+        font-size: 1.125rem !important;
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.button-primary {
+    @include button;
+}
+.button-secondary {
+    @include button2;
+}
+
